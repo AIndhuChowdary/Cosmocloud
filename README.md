@@ -57,10 +57,15 @@ The API will be accessible at http://localhost:8000.
 Refer to the API documentation or explore the API endpoints using tools like cURL or Postman.
 
 Tasks to do: 
+
 **Create dummy dataset in mongodb**
+
 Open MongoDB compass and in the shell:
+
 use ecommerce              --(to create or use database)
+
 to insert data -- 20 records: 
+
 db.products.insertMany([
   {
     "name": "Headphones",
@@ -168,19 +173,30 @@ db.products.insertMany([
 
 
 **api to create new order:**
+
 while the server is running (main.py) run create-order.py file in another terminal or shell 
+
 orders collection will be created with the records mentioned in the create-order file, make sure the product_id i.e _id in the create-order file are the valid _id of products in products collection
 
 
+
 **api to update quantity:**
+
 while the server is running (main.py) run update-quantity.py file in another terminal or shell 
+
 make sure the product_id is valid _id of products in products collection and provide the quantity to update
+
 after running it produces the message and if successful it gets updated in mongodb database
+
 but in my case after updating quantity still when I give the endpoint http://localhost:8000/products/{product_id} I'm encountering {"detail":"Method Not Allowed"} in case PUT request
+
 but it's actually working fine in when tested in POSTMAN
+
 so i created an additional GET method to get the updated results
 
+
 **other api work with endpoints mentioned at the start**
+
 
 
 ## Contributing
