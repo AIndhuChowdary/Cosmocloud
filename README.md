@@ -6,6 +6,27 @@
 
 This is a sample Ecommerce API built with FastAPI and MongoDB.
 
+# Problem Statement
+_You are building an ecommerce application like Flipkart/Amazon. You need to build the following APIs -
+1) API to List all available products in the system. You can create some 10-20 dummy products like TV, laptop, etc for reference. Each product should have these attributes -
+Product name
+Product price
+Product available quantity
+2) API to Create a new order. Each order should have these properties - 
+Timestamp
+Items – list of items bought in the Order. Each record in this array would have these properties -
+productId
+boughtQuantity
+Total amount
+User Address – nested object having these properties -
+City
+Country
+Zip Code
+3) API to fetch all orders from the system. Implement pagination using limit and offset.
+4) API to fetch a single order from the system using Order ID
+5) API to update a product when updating the available quantity for the product._
+
+
 ## Setup
 
 1. Install Python 3.9 or higher.
